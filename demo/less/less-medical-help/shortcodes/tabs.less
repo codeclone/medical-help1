@@ -4,7 +4,7 @@
 */
 
 .tab-content {
-	padding: 15px;
+	padding: 35px;
 	border: 1px solid @gray-lighter;
 }
 .nav-tabs {
@@ -129,7 +129,6 @@
 				border-top: 1px solid transparent;
 				border-left: 1px solid transparent;
 				font-size: 14px;
-				padding: 30px 0 30px 15px;
 			}
 
 			&:first-child > a {
@@ -224,8 +223,8 @@
 	}
 }
 
-/* -------- Services Tab ---------- */
-.services-tab .nav-tabs {
+/* -------- Department Tab ---------- */
+.department-tab .nav-tabs {
 	border-bottom: 1px solid @white-f1;
 	text-align: center;
 	> li {
@@ -252,52 +251,46 @@
 		}
 	}
 }
-.services-tab .nav-tabs > li.active > a,
-.services-tab .nav-tabs > li.active > a:hover,
-.services-tab .nav-tabs > li.active > a:focus,
-.services-tab .nav-tabs > li a:hover,
-.services-tab .nav-tabs > li a:focus {
-	color: #fff;
+
+.department-tab .nav-tabs > li.active > a,
+.department-tab .nav-tabs > li.active > a:hover,
+.department-tab .nav-tabs > li.active > a:focus,
+.department-tab .nav-tabs > li a:hover,
+.department-tab .nav-tabs > li a:focus
+.department-tab .vertical-tab .nav-tabs > li.active > a,
+.department-tab .vertical-tab .nav-tabs > li.active > a:hover,
+.department-tab .vertical-tab .nav-tabs > li.active > a:focus,
+.department-tab .vertical-tab .nav-tabs > li a:hover,
+.department-tab .vertical-tab .nav-tabs > li a:focus  {
+	color: @white-base;
 }
-.services-tab .nav-tabs > li.active > a i,
-.services-tab .nav-tabs > li.active > a:hover i,
-.services-tab .nav-tabs > li.active > a:focus i,
-.services-tab .nav-tabs > li a:hover i,
-.services-tab .nav-tabs > li a:focus i {
-	color: #fff;
-}
-.services-tab .tab-content .service-content {
+.department-tab .tab-content .department-content {
 	.sub-title {
 		color: #c8c8c8;
-		font-family: 'Playfair Display', sans-serif;
-	}
-	.title {
-		color: @black-555;
-		font-family: 'Playfair Display', sans-serif;
 	}
 }
 
 @media only screen and (max-width : 1199px) {
-.services-tab .service-content {
+.department-tab .department-content {
 	margin-bottom: 30px;
 }
 }
 
 @media only screen and (max-width : 991px) {
-.services-tab .service-content {
+.department-tab .department-content {
 	padding: 0 20px;
 }
 }
 
 @media only screen and (max-width : 767px) {
-.services-tab .nav.nav-tabs a {
+.department-tab .nav.nav-tabs a {
   padding: 10px 0;
   font-size: 9px;
 }
-.services-tab .nav.nav-tabs a i {
+.department-tab .nav.nav-tabs a i {
   font-size: 28px;
 }
 }
 .vertical-tab .nav-tabs li a:active {
-    color: @gray-lightgray;    
+    color: @gray-lightgray;
 }

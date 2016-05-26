@@ -61,37 +61,37 @@ body.dark {
 .dark .divider-dark {
   background-color: #252525 !important;
 }
-.dark .bg-deep {
+.dark .bgc-deep {
   background-color: #191919 !important;
 }
-.dark .bg-light {
+.dark .bgc-light {
   background-color: #202020 !important;
 }
-.dark .bg-lighter {
+.dark .bgc-lighter {
   background-color: #262626 !important;
 }
-.dark .bg-lightest {
+.dark .bgc-lightest {
   background-color: #333333 !important;
 }
-.dark .bg-white-light {
+.dark .bgc-white-light {
   background-color: #333333 !important;
 }
-.dark .bg-white {
+.dark .bgc-white {
   background-color: #000 !important;
 }
-.dark .bg-deep-transparent {
+.dark .bgc-deep-transparent {
   background-color: rgba(0, 0, 0, 0.9);
 }
-.dark .bg-light-transparent {
+.dark .bgc-light-transparent {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.dark .bg-lighter-transparent {
+.dark .bgc-lighter-transparent {
   background-color: rgba(0, 0, 0, 0.7);
 }
-.dark .bg-lightest-transparent {
+.dark .bgc-lightest-transparent {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.dark .bg-very-lightest-transparent {
+.dark .bgc-very-lightest-transparent {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .dark .text-black-333 {
@@ -112,34 +112,34 @@ body.dark {
 .dark hr {
   border-color: #333333;
 }
-.dark .border-1px {
+.dark .bd1 {
   border: 1px solid #333333;
 }
-.dark .border-10px,
+.dark .bd10,
 .dark .blog-posts .post.style1 {
   border-color: #191919 !important;
 }
-.dark .border-1px {
+.dark .bd1 {
   border-color: #333333 !important;
 }
-.dark .border-2px {
+.dark .bd2 {
   border-color: #333333 !important;
 }
-.dark .border-3px,
+.dark .bd3,
 .dark .title-border {
   border-color: #333333 !important;
 }
-.dark .border-4px {
+.dark .bd4 {
   border-color: #333333 !important;
 }
-.dark .border-5px {
+.dark .bd5 {
   border-color: #333333 !important;
 }
 .dark .event {
   border-color: #333333 !important;
   box-shadow: unset;
 }
-.dark .border-right {
+.dark .bdr {
   border-right: 1px solid #333333;
 }
 .dark .team-carousel-1col .team-thum {
@@ -157,7 +157,7 @@ body.dark {
 .dark .pricing-table.pricing-style2 .package-type {
   color: #111111 !important;
 }
-.dark .service-feature-box a {
+.dark .service-icon-box a {
   background-color: rgba(33, 33, 33, 0.6) !important;
 }
 .dark .owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-prev,
@@ -167,7 +167,7 @@ body.dark {
 .dark .bx-controls .bx-controls-direction > a {
   background: #404040 !important;
 }
-.dark .funfact.bg-white {
+.dark .funfact.bgc-white {
   background: #262626 !important;
 }
 .dark .funfact.style-1:hover .funfact-title {
@@ -199,11 +199,11 @@ body.dark {
 .dark .tab-content {
   border: 1px solid #333333;
 }
-.dark .services-tab .nav-tabs,
-.dark .services-tab .nav-tabs > li {
+.dark .department-tab .nav-tabs,
+.dark .department-tab .nav-tabs > li {
   border-color: #191919 !important;
 }
-.dark .services-tab .nav-tabs > li > a {
+.dark .department-tab .nav-tabs > li > a {
   background-color: #4d4d4d !important;
 }
 .dark .header-nav .header-nav-wrapper.scroll-to-fixed-fixed.scroll-to-fixed-fixed {
@@ -268,7 +268,7 @@ body.dark {
 .dark.boxed-layout section {
   background: #202020;
 }
-.dark .feature-feature-box {
+.dark .feature-icon-box {
   border: 1px solid #333333;
 }
 .dark .opening-hourse ul li {

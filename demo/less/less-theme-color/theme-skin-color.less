@@ -492,7 +492,12 @@ blockquote {
 .department-tab .nav-tabs > li.active > a:hover,
 .department-tab .nav-tabs > li.active > a:focus,
 .department-tab .nav-tabs > li a:hover,
-.department-tab .nav-tabs > li a:focus {
+.department-tab .nav-tabs > li a:focus,
+.department-tab .vertical-tab .nav-tabs > li.active > a,
+.department-tab .vertical-tab .nav-tabs > li.active > a:hover,
+.department-tab .vertical-tab .nav-tabs > li.active > a:focus,
+.department-tab .vertical-tab .nav-tabs > li a:hover,
+.department-tab .vertical-tab .nav-tabs > li a:focus {
   background-color: @theme-color-1 !important;
 }
 .owl-theme .owl-dots .owl-dot.active span {
@@ -532,6 +537,13 @@ blockquote {
 .bg-tct1-9 {
   background-color: fade(@theme-color-1, 90%);
 }
+/* Layeroverlay */
+.layer-overlay.overlay-red::before,
+.layer-overlay.overlay-tc-deep::before,
+.post .entry-meta.meta-absolute,
+.bg-tct-deep {
+  background-color: fade(@theme-color-1, 90%) !important;
+}
 .stylish-header,.stylish-header:before,
 .service-icon-box a,
 .service-icon-box:hover a {
@@ -570,7 +582,6 @@ blockquote {
 .bg-tct2-9 {
   background-color: fade(@theme-color-2, 90%);
 }
-
 /* background-theme-color-3 */
 .bg-tc3 {
   background-color: @theme-color-3;
@@ -583,27 +594,29 @@ blockquote {
   background-color: fade(@theme-color-3, 20%);
 }
 .bg-tct3-3 {
-  background-color: fade(@theme-color-2, 30%);
+  background-color: fade(@theme-color-3, 30%);
 }
 .bg-tct3-4 {
-  background-color: fade(@theme-color-2, 40%);
+  background-color: fade(@theme-color-3, 40%);
 }
 .bg-tct3-5 {
-  background-color: fade(@theme-color-2, 50%);
+  background-color: fade(@theme-color-3, 50%);
 }
 .bg-tct3-6 {
-  background-color: fade(@theme-color-2, 60%);
+  background-color: fade(@theme-color-3, 60%);
 }
 .bg-tct3-7 {
-  background-color: fade(@theme-color-2, 70%);
+  background-color: fade(@theme-color-3, 70%);
 }
 .bg-tct3-8 {
-  background-color: fade(@theme-color-2, 80%);
+  background-color: fade(@theme-color-3, 80%);
 }
 .bg-tct3-9 {
-  background-color: fade(@theme-color-2, 90%);
+  background-color: fade(@theme-color-3, 90%);
 }
-
+.about-overlay {
+  background-color: fade(@theme-color-1, 20%);  
+}
 /* bg-hover-theme-color-transparent */
 .feature-box {
     .transition(all .3s ease);

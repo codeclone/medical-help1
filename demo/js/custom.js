@@ -1,11 +1,11 @@
- var THEMEMASCOT = THEMEMASCOT || {};
+ var CODECLONE = CODECLONE || {};
 
 (function($) {
     "use strict";
 
 
 
-    THEMEMASCOT.isMobile = {
+    CODECLONE.isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
         },
@@ -22,11 +22,11 @@
             return navigator.userAgent.match(/IEMobile/i);
         },
         any: function() {
-            return (THEMEMASCOT.isMobile.Android() || THEMEMASCOT.isMobile.BlackBerry() || THEMEMASCOT.isMobile.iOS() || THEMEMASCOT.isMobile.Opera() || THEMEMASCOT.isMobile.Windows());
+            return (CODECLONE.isMobile.Android() || CODECLONE.isMobile.BlackBerry() || CODECLONE.isMobile.iOS() || CODECLONE.isMobile.Opera() || CODECLONE.isMobile.Windows());
         }
     };
 
-    THEMEMASCOT.isRTL = {
+    CODECLONE.isRTL = {
         check: function() {
             if( $( "html" ).attr("dir") == "rtl" ) {
                 return true;
@@ -36,7 +36,7 @@
         }
     };
 
-    THEMEMASCOT.urlParameter = {
+    CODECLONE.urlParameter = {
         get: function(sParam) {
             var sPageURL = decodeURIComponent(window.location.search.substring(1)),
                 sURLVariables = sPageURL.split('&'),
@@ -54,7 +54,7 @@
     };
 
 
-    THEMEMASCOT.bmiCalculator = {
+    CODECLONE.bmiCalculator = {
         magic: function(bmi) {
             var output = '';
             var info = '';
@@ -100,7 +100,7 @@
 
             var total_height_inc = ( parseInt(height_ft) * 12 ) + parseInt(height_in);
             var bmi = ( parseFloat(weight_lbs) / (total_height_inc * total_height_inc) ) * 703;
-            var output = THEMEMASCOT.bmiCalculator.magic(bmi);
+            var output = CODECLONE.bmiCalculator.magic(bmi);
 
             bmi_form.find('#bmi_standard_calculator_form_result').html(output).fadeIn('slow');
         },
@@ -114,7 +114,7 @@
             var total_weight_kg = parseFloat(weight_kg) ;
             var total_height_m = parseFloat(height_cm) * 0.01;
             var bmi = ( total_weight_kg / (total_height_m * total_height_m) );
-            var output = THEMEMASCOT.bmiCalculator.magic(bmi);
+            var output = CODECLONE.bmiCalculator.magic(bmi);
 
             bmi_form.find('#bmi_metric_calculator_form_result').html(output).fadeIn('slow');
         },
@@ -123,46 +123,46 @@
             var bmi_Standard_Form = $('#form_bmi_standard_calculator');
             bmi_Standard_Form.on('submit', function(e) {
                 e.preventDefault();
-                THEMEMASCOT.bmiCalculator.calculateStandard(bmi_Standard_Form);
+                CODECLONE.bmiCalculator.calculateStandard(bmi_Standard_Form);
                 return false;
             });
 
             var bmi_Metric_Form = $('#form_bmi_metric_calculator');
             bmi_Metric_Form.on('submit', function(e) {
                 e.preventDefault();
-                THEMEMASCOT.bmiCalculator.calculateMetric(bmi_Metric_Form);
+                CODECLONE.bmiCalculator.calculateMetric(bmi_Metric_Form);
                 return false;
             });
         }
 
     };
 
-    THEMEMASCOT.initialize = {
+    CODECLONE.initialize = {
 
         init: function() {
-            THEMEMASCOT.bmiCalculator.init();
-            THEMEMASCOT.initialize.TM_datePicker();
-            THEMEMASCOT.initialize.TM_onLoadModal();
-            THEMEMASCOT.initialize.TM_loadBSParentModal();
-            THEMEMASCOT.initialize.TM_demoSwitcher();
-            THEMEMASCOT.initialize.TM_platformDetect();
-            THEMEMASCOT.initialize.TM_customDataAttributes();
-            THEMEMASCOT.initialize.TM_parallaxBgInit();
-            THEMEMASCOT.initialize.TM_resizeFullscreen();
-            THEMEMASCOT.initialize.TM_magnificPopup_lightbox();
-            THEMEMASCOT.initialize.TM_prettyPhoto_lightbox();
-            THEMEMASCOT.initialize.TM_nivolightbox();
-            THEMEMASCOT.initialize.TM_wow();
-            THEMEMASCOT.initialize.TM_fitVids();
-            THEMEMASCOT.initialize.TM_YTPlayer();
-            THEMEMASCOT.initialize.TM_equalHeightDivs();
+            CODECLONE.bmiCalculator.init();
+            CODECLONE.initialize.CC_datePicker();
+            CODECLONE.initialize.CC_onLoadModal();
+            CODECLONE.initialize.CC_loadBSParentModal();
+            CODECLONE.initialize.CC_demoSwitcher();
+            CODECLONE.initialize.CC_platformDetect();
+            CODECLONE.initialize.CC_customDataAttributes();
+            CODECLONE.initialize.CC_parallaxBgInit();
+            CODECLONE.initialize.CC_resizeFullscreen();
+            CODECLONE.initialize.CC_magnificPopup_lightbox();
+            CODECLONE.initialize.CC_prettyPhoto_lightbox();
+            CODECLONE.initialize.CC_nivolightbox();
+            CODECLONE.initialize.CC_wow();
+            CODECLONE.initialize.CC_fitVids();
+            CODECLONE.initialize.CC_YTPlayer();
+            CODECLONE.initialize.CC_equalHeightDivs();
         },
 
 
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Hash Forwarding  ---------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_datePicker: function() {
+        CC_datePicker: function() {
             $( ".date-picker" ).datepicker();
             $( ".time-picker" ).timepicker();
         },
@@ -170,7 +170,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Hash Forwarding  ---------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_onLoadModal: function() {
+        CC_onLoadModal: function() {
             var $modal = $('.modal-on-load');
             if( $modal.length > 0 ) {
                 $modal.each( function(){
@@ -241,7 +241,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------ Bootstrap Parent Modal  --------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_loadBSParentModal: function() {
+        CC_loadBSParentModal: function() {
             var ajaxLoadContent = true;
             if( ajaxLoadContent ) {
                 $.ajax({
@@ -254,7 +254,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ demo switcher    ---------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_demoSwitcher: function() {
+        CC_demoSwitcher: function() {
             var showSwitcher = true;
             var $style_switcher = $('#style-switcher');
             if( !$style_switcher.length && showSwitcher ) {
@@ -269,7 +269,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ preloader  ---------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_preLoaderClickDisable: function() {
+        CC_preLoaderClickDisable: function() {
             var $preloader = $('#preloader');
             $preloader.children('#disable-preloader').on('click', function(e) {
                 $preloader.fadeOut();
@@ -277,7 +277,7 @@
             });
         },
 
-        TM_preLoaderOnLoad: function() {
+        CC_preLoaderOnLoad: function() {
             var $preloader = $('#preloader');
             $preloader.delay(200).fadeOut('slow');
         },
@@ -286,8 +286,8 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------- Platform detect  --------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_platformDetect: function() {
-            if (THEMEMASCOT.isMobile.any()) {
+        CC_platformDetect: function() {
+            if (CODECLONE.isMobile.any()) {
                 $html.addClass("mobile");
             } else {
                 $html.addClass("no-mobile");
@@ -298,7 +298,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Hash Forwarding  ---------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_hashForwarding: function() {
+        CC_hashForwarding: function() {
             if (window.location.hash) {
                 var hash_offset = $(window.location.hash).offset().top;
                 $("html, body").animate({
@@ -311,7 +311,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------- Background image, color ---------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_customDataAttributes: function() {
+        CC_customDataAttributes: function() {
             $('[data-bg-color]').each(function() {
                 $(this).css("cssText", "background: " + $(this).data("bg-color") + " !important;");
             });
@@ -349,8 +349,8 @@
         /* ---------------------------------------------------------------------- */
         /* -------------------------- Background Parallax ----------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_parallaxBgInit: function() {
-            if (!THEMEMASCOT.isMobile.any()) {
+        CC_parallaxBgInit: function() {
+            if (!CODECLONE.isMobile.any()) {
                 $.stellar({
                     horizontalScrolling: false,
                     responsive: true
@@ -363,7 +363,7 @@
         /* ---------------------------------------------------------------------- */
         /* --------------------------- Home Resize Fullscreen ------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_resizeFullscreen: function() {
+        CC_resizeFullscreen: function() {
             var windowHeight = $window.height();
             $('.fullscreen, .revslider-fullscreen').height(windowHeight);
         },
@@ -371,7 +371,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- Magnific Popup ------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_magnificPopup_lightbox: function() {
+        CC_magnificPopup_lightbox: function() {
             
             $('.image-popup-lightbox').magnificPopup({
                 type: 'image',
@@ -621,7 +621,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- lightbox popup ------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_prettyPhoto_lightbox: function() {
+        CC_prettyPhoto_lightbox: function() {
             //prettyPhoto lightbox
             $("a[data-rel^='prettyPhoto']").prettyPhoto({
                 hook: 'data-rel',
@@ -636,7 +636,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Nivo Lightbox ------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_nivolightbox: function() {
+        CC_nivolightbox: function() {
             $('a[data-lightbox-gallery]').nivoLightbox({
                 effect: 'fadeScale'
             });
@@ -647,7 +647,7 @@
         /* ---------------------------------------------------------------------- */
         /* ---------------------------- Wow initialize  ------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_wow: function() {
+        CC_wow: function() {
             var wow = new WOW({
                 mobile: false // trigger animations on mobile devices (default is true)
             });
@@ -657,21 +657,21 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- Fit Vids ------------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_fitVids: function() {
+        CC_fitVids: function() {
             $body.fitVids();
         },
 
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- YT Player for Video -------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_YTPlayer: function() {
+        CC_YTPlayer: function() {
             $(".player").mb_YTPlayer();
         },
 
         /* ---------------------------------------------------------------------- */
         /* ---------------------------- equalHeights ---------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_equalHeightDivs: function() {
+        CC_equalHeightDivs: function() {
             /* equal heigh */
             var $equal_height = $('.equal-height');
             $equal_height.children('div').css('min-height', 'auto');
@@ -700,22 +700,22 @@
     };
 
 
-    THEMEMASCOT.header = {
+    CODECLONE.header = {
 
         init: function() {
 
             var t = setTimeout(function() {
-                THEMEMASCOT.header.TM_fullscreenMenu();
-                THEMEMASCOT.header.TM_sidePanelReveal();
-                THEMEMASCOT.header.TM_scroolToTopOnClick();
-                THEMEMASCOT.header.TM_scrollToFixed();
-                THEMEMASCOT.header.TM_topnavAnimate();
-                THEMEMASCOT.header.TM_scrolltoTarget();
-                THEMEMASCOT.header.TM_menuzord();
-                THEMEMASCOT.header.TM_navLocalScorll();
-                THEMEMASCOT.header.TM_menuCollapseOnClick();
-                THEMEMASCOT.header.TM_homeParallaxFadeEffect();
-                THEMEMASCOT.header.TM_topsearch_toggle();
+                CODECLONE.header.CC_fullscreenMenu();
+                CODECLONE.header.CC_sidePanelReveal();
+                CODECLONE.header.CC_scroolToTopOnClick();
+                CODECLONE.header.CC_scrollToFixed();
+                CODECLONE.header.CC_topnavAnimate();
+                CODECLONE.header.CC_scrolltoTarget();
+                CODECLONE.header.CC_menuzord();
+                CODECLONE.header.CC_navLocalScorll();
+                CODECLONE.header.CC_menuCollapseOnClick();
+                CODECLONE.header.CC_homeParallaxFadeEffect();
+                CODECLONE.header.CC_topsearch_toggle();
             }, 0);
 
         },
@@ -724,7 +724,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------- menufullpage ---------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_fullscreenMenu: function() {
+        CC_fullscreenMenu: function() {
             var $menufullpage = $('.menu-full-page .fullpage-nav-toggle');
             $menufullpage.menufullpage();
         },
@@ -733,7 +733,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------- Side Push Panel ---------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_sidePanelReveal: function() {
+        CC_sidePanelReveal: function() {
             $(".side-panel-trigger").click(function(){
                 $body.toggleClass("side-panel-open");
                 if( $body.hasClass('device-touch') ) {
@@ -756,7 +756,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------- scrollToTop  ------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_scroolToTop: function() {
+        CC_scroolToTop: function() {
             if ($window.scrollTop() > 600) {
                 $('.scrollToTop').fadeIn();
             } else {
@@ -764,7 +764,7 @@
             }
         },
 
-        TM_scroolToTopOnClick: function() {
+        CC_scroolToTopOnClick: function() {
             $(document.body).on('click', '.scrollToTop', function(e) {
                 $('html, body').animate({
                     scrollTop: 0
@@ -777,7 +777,7 @@
         /* ---------------------------------------------------------------------------- */
         /* --------------------------- One Page Nav close on click -------------------- */
         /* ---------------------------------------------------------------------------- */
-        TM_menuCollapseOnClick: function() {
+        CC_menuCollapseOnClick: function() {
             $(document).on('click', '.onepage-nav a', function(e) {
                 $('.showhide').trigger('click');
                 return false;
@@ -787,7 +787,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------- Active Menu Item on Reaching Different Sections ---------- */
         /* ---------------------------------------------------------------------- */
-        TM_activateMenuItemOnReach: function() {
+        CC_activateMenuItemOnReach: function() {
             var $onepage_nav = $('.onepage-nav');
             var cur_pos = $window.scrollTop() + 2;
             var nav_height = $onepage_nav.outerHeight();
@@ -808,7 +808,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------- on click scrool to target with smoothness -------- */
         /* ---------------------------------------------------------------------- */
-        TM_scrolltoTarget: function() {
+        CC_scrolltoTarget: function() {
             //jQuery for page scrolling feature - requires jQuery Easing plugin
             $('.smooth-scroll-to-target, .fullscreen-onepage-nav a').on('click', function(e) {
                 e.preventDefault();
@@ -839,7 +839,7 @@
         /* ---------------------------------------------------------------------- */
         /* -------------------------- Scroll navigation ------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_navLocalScorll: function() {
+        CC_navLocalScorll: function() {
             var data_offset = -60;
             $("#menuzord .menuzord-menu, #menuzord-right .menuzord-menu").localScroll({
                 target: "body",
@@ -859,7 +859,7 @@
         /* ---------------------------------------------------------------------------- */
         /* --------------------------- collapsed menu close on click ------------------ */
         /* ---------------------------------------------------------------------------- */
-        TM_scrollToFixed: function() {
+        CC_scrollToFixed: function() {
             $('.navbar-scrolltofixed').scrollToFixed();
             $('.scrolltofixed').scrollToFixed({
                 marginTop: $('.header .header-nav').outerHeight(true) + 10,
@@ -881,7 +881,7 @@
         /* ----------------------------------------------------------------------------- */
         /* --------------------------- Menuzord - Responsive Megamenu ------------------ */
         /* ----------------------------------------------------------------------------- */
-        TM_menuzord: function() {
+        CC_menuzord: function() {
             $("#menuzord").menuzord({
                 align: "left",
                 effect: "slide",
@@ -918,7 +918,7 @@
         /* ---------------------------------------------------------------------- */
         /* --------------------------- Waypoint Top Nav Sticky ------------------ */
         /* ---------------------------------------------------------------------- */
-        TM_topnavAnimate: function() {
+        CC_topnavAnimate: function() {
             if ($window.scrollTop() > (50)) {
                 $(".navbar-sticky-animated").removeClass("animated-active");
             } else {
@@ -935,7 +935,7 @@
         /* ---------------------------------------------------------------------- */
         /* ---------------- home section on scroll parallax & fade -------------- */
         /* ---------------------------------------------------------------------- */
-        TM_homeParallaxFadeEffect: function() {
+        CC_homeParallaxFadeEffect: function() {
             if ($window.width() >= 1200) {
                 var scrolled = $window.scrollTop();
                 $('.content-fade-effect .home-content .home-text').css('padding-top', (scrolled * 0.0610) + '%').css('opacity', 1 - (scrolled * 0.00120));
@@ -945,7 +945,7 @@
         /* ---------------------------------------------------------------------- */
         /* --------------------------- Top search toggle  ----------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_topsearch_toggle: function() {
+        CC_topsearch_toggle: function() {
             $(document.body).on('click', '#top-search-toggle', function(e) {
                 e.preventDefault();
                 $('.search-form-wrapper.toggle').toggleClass('active');
@@ -955,25 +955,25 @@
 
     };
 
-    THEMEMASCOT.widget = {
+    CODECLONE.widget = {
 
         init: function() {
 
             var t = setTimeout(function() {
-                THEMEMASCOT.widget.TM_shopClickEvents();
-                THEMEMASCOT.widget.TM_fcCalender();
-                THEMEMASCOT.widget.TM_verticalTimeline();
-                THEMEMASCOT.widget.TM_verticalMasonryTimeline();
-                THEMEMASCOT.widget.TM_masonryIsotop();
-                THEMEMASCOT.widget.TM_pieChart();
-                THEMEMASCOT.widget.TM_progressBar();
-                THEMEMASCOT.widget.TM_funfact();
-                THEMEMASCOT.widget.TM_instagramFeed();
-                THEMEMASCOT.widget.TM_jflickrfeed();
-                THEMEMASCOT.widget.TM_accordion_toggles();
-                THEMEMASCOT.widget.TM_tooltip();
-                THEMEMASCOT.widget.TM_twittie();
-                //THEMEMASCOT.widget.TM_countDownTimer();
+                CODECLONE.widget.CC_shopClickEvents();
+                CODECLONE.widget.CC_fcCalender();
+                CODECLONE.widget.CC_verticalTimeline();
+                CODECLONE.widget.CC_verticalMasonryTimeline();
+                CODECLONE.widget.CC_masonryIsotop();
+                CODECLONE.widget.CC_pieChart();
+                CODECLONE.widget.CC_progressBar();
+                CODECLONE.widget.CC_funfact();
+                CODECLONE.widget.CC_instagramFeed();
+                CODECLONE.widget.CC_jflickrfeed();
+                CODECLONE.widget.CC_accordion_toggles();
+                CODECLONE.widget.CC_tooltip();
+                CODECLONE.widget.CC_twittie();
+                //CODECLONE.widget.CC_countDownTimer();
             }, 0);
 
         },
@@ -981,7 +981,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Shop Plus Minus ----------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_shopClickEvents: function() {
+        CC_shopClickEvents: function() {
             $(document.body).on('click', '.quantity .plus', function(e) {
                 var currentVal = parseInt($(this).parent().children(".qty").val(), 10);
                 if (!isNaN(currentVal)) {
@@ -1007,7 +1007,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Event Calendar ------------------------ */
         /* ---------------------------------------------------------------------- */
-        TM_fcCalender: function() {
+        CC_fcCalender: function() {
             if (typeof calendarEvents !== "undefined" ) {
                 $('#full-event-calendar').fullCalendar({
                     header: {
@@ -1041,7 +1041,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------ Timeline Block ------------------------ */
         /* ---------------------------------------------------------------------- */
-        TM_verticalTimeline: function() {
+        CC_verticalTimeline: function() {
             var timelineBlocks = $('.cd-timeline-block'),
               offset = 0.8;
 
@@ -1069,7 +1069,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------- Vertical Masonry Timeline -------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_verticalMasonryTimeline: function() {
+        CC_verticalMasonryTimeline: function() {
             var $masonry_timeline = $('.vertical-masonry-timeline');
             $masonry_timeline.isotope({
                 itemSelector : '.each-masonry-item',
@@ -1116,7 +1116,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- Masonry Isotope ------------------------ */
         /* ---------------------------------------------------------------------- */
-        TM_masonryIsotop: function() {
+        CC_masonryIsotop: function() {
             var isotope_mode;
             if ($portfolio_gallery.hasClass("masonry")){
                 isotope_mode = "masonry";
@@ -1147,11 +1147,11 @@
                 return false;
             });
             
-            THEMEMASCOT.slider.TM_flexslider();
+            CODECLONE.slider.CC_flexslider();
 
         },
 
-        TM_portfolioFlexSliderGalleryPopUpInit: function() {
+        CC_portfolioFlexSliderGalleryPopUpInit: function() {
             var $flexSliders = $portfolio_gallery.find('.slides');
             $flexSliders.each(function () {
                 var _items = $(this).find("li > a");
@@ -1169,7 +1169,7 @@
             });
         },
 
-        TM_isotopeGridRearrange: function() {
+        CC_isotopeGridRearrange: function() {
             var isotope_mode;
             if ($portfolio_gallery.hasClass("masonry")){
                 isotope_mode = "masonry";
@@ -1182,14 +1182,14 @@
             });
         },
 
-        TM_isotopeGridShuffle: function() {
+        CC_isotopeGridShuffle: function() {
             $portfolio_gallery.isotope('shuffle');
         },
 
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- CountDown ------------------------------ */
         /* ---------------------------------------------------------------------- */
-        TM_countDownTimer: function() {
+        CC_countDownTimer: function() {
             var $clock = $('#clock-count-down');
             var endingdate = $clock.data("endingdate");
             $clock.countdown(endingdate, function(event) {
@@ -1208,7 +1208,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------- pie chart / circle skill bar ----------------- */
         /* ---------------------------------------------------------------------- */
-        TM_pieChart: function() {
+        CC_pieChart: function() {
             var $piechart = $('.piechart');
             $piechart.appear();
             $(document.body).on('appear', '.piechart', function() {
@@ -1240,7 +1240,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------- progress bar / horizontal skill bar -------------- */
         /* ---------------------------------------------------------------------- */
-        TM_progressBar: function() {
+        CC_progressBar: function() {
             var $progress_bar = $('.progress-bar');
             $progress_bar.appear();
             $(document.body).on('appear', '.progress-bar', function() {
@@ -1257,7 +1257,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------ Funfact Number Counter ---------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_funfact: function() {
+        CC_funfact: function() {
             var $animate_number = $('.animate-number');
             $animate_number.appear();
             $(document.body).on('appear', '.animate-number', function() {
@@ -1273,7 +1273,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- Flickr Feed ---------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_instagramFeed: function() {
+        CC_instagramFeed: function() {
             $('.instagram-feed-carousel').each(function() {
                 var current_div = $(this);
                 var instagramFeed = new Instafeed({
@@ -1286,7 +1286,7 @@
                     template: '<div class="item"><figure><img src="{{image}}" /><a href="{{link}}" class="link-out" target="_blank"><i class="fa fa-link"></i></a></figure></div>',
                     after: function() {
                         current_div.owlCarousel({
-                            rtl: THEMEMASCOT.isRTL.check(),
+                            rtl: CODECLONE.isRTL.check(),
                             autoplay: false,
                             autoplayTimeout: 4000,
                             loop: true,
@@ -1330,7 +1330,7 @@
         /* ---------------------------------------------------------------------- */
         /* ---------------------------- Flickr Feed ----------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_jflickrfeed: function() {
+        CC_jflickrfeed: function() {
             $(".flickr-widget .flickr-feed").jflickrfeed({
                 limit: 9,
                 qstrings: {
@@ -1343,7 +1343,7 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------- accordion & toggles ------------------------ */
         /* ---------------------------------------------------------------------- */
-        TM_accordion_toggles: function() {
+        CC_accordion_toggles: function() {
             var $panel_group_collapse = $('.panel-group .collapse');
             $panel_group_collapse.on("show.bs.collapse", function(e) {
                 $(this).closest(".panel-group").find("[href='#" + $(this).attr("id") + "']").addClass("active");
@@ -1356,14 +1356,14 @@
         /* ---------------------------------------------------------------------- */
         /* ------------------------------- tooltip  ----------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_tooltip: function() {
+        CC_tooltip: function() {
             $('[data-toggle="tooltip"]').tooltip();
         },
 
         /* ---------------------------------------------------------------------- */
         /* ---------------------------- Twitter Feed  --------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_twittie: function() {
+        CC_twittie: function() {
             var $twitter_feed = $('.twitter-feed');
             var $twitter_feed_carousel = $('.twitter-feed-carousel');
 
@@ -1383,7 +1383,7 @@
                 loadingText: 'Loading!'
             }, function() {
                 $twitter_feed_carousel.find('ul').owlCarousel({
-                    rtl: THEMEMASCOT.isRTL.check(),
+                    rtl: CODECLONE.isRTL.check(),
                     autoplay: true,
                     autoplayTimeout: 2000,
                     loop: true,
@@ -1395,16 +1395,16 @@
         }
     };
 
-    THEMEMASCOT.slider = {
+    CODECLONE.slider = {
 
         init: function() {
 
             var t = setTimeout(function() {
-                THEMEMASCOT.slider.TM_typedAnimation();
-                THEMEMASCOT.slider.TM_flexslider();
-                THEMEMASCOT.slider.TM_owlCarousel();
-                THEMEMASCOT.slider.TM_maximageSlider();
-                THEMEMASCOT.slider.TM_bxslider();
+                CODECLONE.slider.CC_typedAnimation();
+                CODECLONE.slider.CC_flexslider();
+                CODECLONE.slider.CC_owlCarousel();
+                CODECLONE.slider.CC_maximageSlider();
+                CODECLONE.slider.CC_bxslider();
             }, 0);
 
         },
@@ -1413,7 +1413,7 @@
         /* ---------------------------------------------------------------------- */
         /* -------------------------- Typed Text Carousel  ---------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_typedAnimation: function() {
+        CC_typedAnimation: function() {
             if ($('.typed-text-carousel').length) {
                 $('.typed-text-carousel').each(function() {
                     var string_1 = $(this).find('span:first-child').text();
@@ -1451,11 +1451,11 @@
         /* ---------------------------------------------------------------------- */
         /* -------------------------------- flexslider  ------------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_flexslider: function() {
+        CC_flexslider: function() {
             var $flexSlider = $('.flexslider-wrapper').find('.flexslider');
             if( $flexSlider.length > 0 ){
                 $flexSlider.each(function() {
-                    THEMEMASCOT.widget.TM_portfolioFlexSliderGalleryPopUpInit();
+                    CODECLONE.widget.CC_portfolioFlexSliderGalleryPopUpInit();
                     var $flexsSlider = $(this),
                         flexsAnimation = $flexsSlider.parent().data('animation'),
                         flexsEasing = $flexsSlider.parent().data('easing'),
@@ -1482,7 +1482,7 @@
                     if( flexsPauseHover == false ) { flexsPauseHover = false; } else { flexsPauseHover = true; }
 
                     $flexsSlider.flexslider({
-                        rtl: THEMEMASCOT.isRTL.check(),
+                        rtl: CODECLONE.isRTL.check(),
                         selector: ".slides > li",
                         animation: flexsAnimation,
                         easing: flexsEasing,
@@ -1500,9 +1500,9 @@
                                 },500);
                             });
                             //var t = setTimeout( function(){ $('#portfolio.portfolio-masonry,#portfolio.portfolio-full,#posts.post-masonry').isotope('layout'); }, 1200 );
-                            THEMEMASCOT.initialize.TM_magnificPopup_lightbox();
-                            THEMEMASCOT.initialize.TM_prettyPhoto_lightbox();
-                            THEMEMASCOT.initialize.TM_nivolightbox();
+                            CODECLONE.initialize.CC_magnificPopup_lightbox();
+                            CODECLONE.initialize.CC_prettyPhoto_lightbox();
+                            CODECLONE.initialize.CC_nivolightbox();
                         },
                         after: function(){
                         }
@@ -1514,12 +1514,12 @@
         /* ---------------------------------------------------------------------- */
         /* -------------------------------- Owl Carousel  ----------------------- */
         /* ---------------------------------------------------------------------- */
-        TM_owlCarousel: function() {
+        CC_owlCarousel: function() {
             $('.owl-carousel-1col, .text-carousel, .image-carousel, .fullwidth-carousel').each(function() {
                 var data_dots = ( $(this).data("dots") === undefined ) ? false: $(this).data("dots");
                 var data_nav = ( $(this).data("nav") === undefined ) ? false: $(this).data("nav");
                 $(this).owlCarousel({
-                    rtl: THEMEMASCOT.isRTL.check(),
+                    rtl: CODECLONE.isRTL.check(),
                     autoplay: false,
                     autoplayTimeout: 4000,
                     loop: true,
@@ -1537,7 +1537,7 @@
                 var data_dots = ( $(this).data("dots") === undefined ) ? false: $(this).data("dots");
                 var data_nav = ( $(this).data("nav")=== undefined ) ? false: $(this).data("nav");
                 $(this).owlCarousel({
-                    rtl: THEMEMASCOT.isRTL.check(),
+                    rtl: CODECLONE.isRTL.check(),
                     autoplay: false,
                     autoplayTimeout: 4000,
                     loop: true,
@@ -1579,7 +1579,7 @@
                 var data_dots = ( $(this).data("dots") === undefined ) ? false: $(this).data("dots");
                 var data_nav = ( $(this).data("nav")=== undefined ) ? false: $(this).data("nav");
                 $(this).owlCarousel({
-                    rtl: THEMEMASCOT.isRTL.check(),
+                    rtl: CODECLONE.isRTL.check(),
                     autoplay: true,
                     autoplayTimeout: 4000,
                     loop: true,
@@ -1621,7 +1621,7 @@
                 var data_dots = ( $(this).data("dots") === undefined ) ? false: $(this).data("dots");
                 var data_nav = ( $(this).data("nav")=== undefined ) ? false: $(this).data("nav");
                 $(this).owlCarousel({
-                    rtl: THEMEMASCOT.isRTL.check(),
+                    rtl: CODECLONE.isRTL.check(),
                     autoplay: true,
                     autoplayTimeout: 4000,
                     loop: true,
@@ -1667,7 +1667,7 @@
                 var data_dots = ( $(this).data("dots") === undefined ) ? false: $(this).data("dots");
                 var data_nav = ( $(this).data("nav")=== undefined ) ? false: $(this).data("nav");
                 $(this).owlCarousel({
-                    rtl: THEMEMASCOT.isRTL.check(),
+                    rtl: CODECLONE.isRTL.check(),
                     autoplay: true,
                     autoplayTimeout: 4000,
                     loop: true,
@@ -1709,7 +1709,7 @@
                 var data_dots = ( $(this).data("dots") === undefined ) ? false: $(this).data("dots");
                 var data_nav = ( $(this).data("nav")=== undefined ) ? false: $(this).data("nav");
                 $(this).owlCarousel({
-                    rtl: THEMEMASCOT.isRTL.check(),
+                    rtl: CODECLONE.isRTL.check(),
                     autoplay: true,
                     autoplayTimeout: 4000,
                     loop: true,
@@ -1752,7 +1752,7 @@
         /* ---------------------------------------------------------------------- */
         /* ----------------------------- BxSlider  ------------------------------ */
         /* ---------------------------------------------------------------------- */
-        TM_bxslider: function() {  
+        CC_bxslider: function() {  
             $('.bxslider').bxSlider({
                 mode: 'vertical',
                 minSlides: 4,
@@ -1779,7 +1779,7 @@
         /* ---------------------------------------------------------------------- */
         /* ---------- maximage Fullscreen Parallax Background Slider  ----------- */
         /* ---------------------------------------------------------------------- */
-        TM_maximageSlider: function() {
+        CC_maximageSlider: function() {
             $('#maximage').maximage({
                 cycleOptions: {
                     fx: 'fade',
@@ -1791,13 +1791,13 @@
         }
     };
 
-    THEMEMASCOT.documentOnResize = {
+    CODECLONE.documentOnResize = {
 
         init: function() {
 
             var t = setTimeout(function() {
-                THEMEMASCOT.initialize.TM_equalHeightDivs();
-                THEMEMASCOT.initialize.TM_resizeFullscreen();
+                CODECLONE.initialize.CC_equalHeightDivs();
+                CODECLONE.initialize.CC_resizeFullscreen();
                 $.stellar('refresh');
             }, 0);
 
@@ -1806,7 +1806,7 @@
     };
 
 
-    THEMEMASCOT.documentOnLoad = {
+    CODECLONE.documentOnLoad = {
 
         init: function() {
 
@@ -1814,9 +1814,9 @@
             $window.trigger("resize");
             
             var t = setTimeout(function() {
-                THEMEMASCOT.initialize.TM_preLoaderOnLoad();
-                THEMEMASCOT.initialize.TM_hashForwarding();
-                THEMEMASCOT.initialize.TM_parallaxBgInit();
+                CODECLONE.initialize.CC_preLoaderOnLoad();
+                CODECLONE.initialize.CC_hashForwarding();
+                CODECLONE.initialize.CC_parallaxBgInit();
             }, 0);
 
         }
@@ -1824,14 +1824,14 @@
     };
 
     //document ready
-    THEMEMASCOT.documentOnReady = {
+    CODECLONE.documentOnReady = {
 
         init: function() {
-            THEMEMASCOT.initialize.init();
-            THEMEMASCOT.header.init();
-            THEMEMASCOT.slider.init();
-            THEMEMASCOT.widget.init();
-            THEMEMASCOT.documentOnReady.windowscroll();
+            CODECLONE.initialize.init();
+            CODECLONE.header.init();
+            CODECLONE.slider.init();
+            CODECLONE.widget.init();
+            CODECLONE.documentOnReady.windowscroll();
             $.stellar('refresh');
         },
 
@@ -1839,9 +1839,9 @@
 
             $window.on( 'scroll', function(){
 
-                THEMEMASCOT.header.TM_scroolToTop();
-                THEMEMASCOT.header.TM_activateMenuItemOnReach();
-                THEMEMASCOT.header.TM_topnavAnimate();
+                CODECLONE.header.CC_scroolToTop();
+                CODECLONE.header.CC_activateMenuItemOnReach();
+                CODECLONE.header.CC_topnavAnimate();
             });
         }
 
@@ -1865,10 +1865,10 @@
     /* ---------------------------------------------------------------------- */
     /* ---------------------------- Call Functions -------------------------- */
     /* ---------------------------------------------------------------------- */
-    THEMEMASCOT.initialize.TM_preLoaderClickDisable();
-    $(document).ready(THEMEMASCOT.documentOnReady.init);
-    $window.load(THEMEMASCOT.documentOnLoad.init);
-    $window.on('resize', THEMEMASCOT.documentOnResize.init);
+    CODECLONE.initialize.CC_preLoaderClickDisable();
+    $(document).ready(CODECLONE.documentOnReady.init);
+    $window.load(CODECLONE.documentOnLoad.init);
+    $window.on('resize', CODECLONE.documentOnResize.init);
 
 })(jQuery);
 

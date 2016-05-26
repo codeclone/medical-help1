@@ -11,25 +11,40 @@
 }
 /* Department style */
 .department-tab {
-  .nav-tabs {
-	  border-bottom: 1px solid @white-f2;
+	.vertical-tab {
+	  .nav-tabs {
+		  border: 1px solid @white-f2;
+		  text-align: center;
+		>  li {
+			border-bottom: @gray-lightgray;
+			margin-bottom: 0;
+			width: 100%;
+			  a {
+			    color: @gray-darkgray;
+			    font-size: 13px;
+			    margin-right: 0;
+			    padding: 30px 20px;
+			    text-transform: uppercase;
+			  }
+		  }	
+	    }		
+	}
+    .nav-tabs {
+	  border: 1px solid @white-f2;
 	  text-align: center;
-	  li {
+	  > li {
 		margin-bottom: 0;
+		border-right: 1px solid @gray-lightgray;
 		width: 20%;
+		float: left;
 		  a {
 		    color: @gray-darkgray;
 		    font-size: 13px;
 		    margin-right: 0;
-		    padding: 35px 20px;
-		    text-transform: uppercase;		  	
+		    padding: 30px 20px;
+		    text-transform: uppercase;
+			.transition(all 300ms ease-in);
 		  }
-	  }	
+	  } 	
     }
-}
-.department-tab .nav-tabs > li {
-}
-.department-tab .nav-tabs > li > a  {
-}
-.department-tab .nav-tabs {
 }

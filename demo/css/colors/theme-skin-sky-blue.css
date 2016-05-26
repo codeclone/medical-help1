@@ -682,7 +682,12 @@ fieldset[disabled] .btn-tc.focus {
 .department-tab .nav-tabs > li.active > a:hover,
 .department-tab .nav-tabs > li.active > a:focus,
 .department-tab .nav-tabs > li a:hover,
-.department-tab .nav-tabs > li a:focus {
+.department-tab .nav-tabs > li a:focus,
+.department-tab .vertical-tab .nav-tabs > li.active > a,
+.department-tab .vertical-tab .nav-tabs > li.active > a:hover,
+.department-tab .vertical-tab .nav-tabs > li.active > a:focus,
+.department-tab .vertical-tab .nav-tabs > li a:hover,
+.department-tab .vertical-tab .nav-tabs > li a:focus {
   background-color: #00A4EF !important;
 }
 .owl-theme .owl-dots .owl-dot.active span {
@@ -719,6 +724,13 @@ fieldset[disabled] .btn-tc.focus {
 }
 .bg-tct1-9 {
   background-color: rgba(0, 164, 239, 0.9);
+}
+/* Layeroverlay */
+.layer-overlay.overlay-red::before,
+.layer-overlay.overlay-tc-deep::before,
+.post .entry-meta.meta-absolute,
+.bg-tct-deep {
+  background-color: rgba(0, 164, 239, 0.9) !important;
 }
 .stylish-header,
 .stylish-header:before,
@@ -770,25 +782,28 @@ fieldset[disabled] .btn-tc.focus {
   background-color: rgba(0, 143, 213, 0.2);
 }
 .bg-tct3-3 {
-  background-color: rgba(77, 177, 226, 0.3);
+  background-color: rgba(0, 143, 213, 0.3);
 }
 .bg-tct3-4 {
-  background-color: rgba(77, 177, 226, 0.4);
+  background-color: rgba(0, 143, 213, 0.4);
 }
 .bg-tct3-5 {
-  background-color: rgba(77, 177, 226, 0.5);
+  background-color: rgba(0, 143, 213, 0.5);
 }
 .bg-tct3-6 {
-  background-color: rgba(77, 177, 226, 0.6);
+  background-color: rgba(0, 143, 213, 0.6);
 }
 .bg-tct3-7 {
-  background-color: rgba(77, 177, 226, 0.7);
+  background-color: rgba(0, 143, 213, 0.7);
 }
 .bg-tct3-8 {
-  background-color: rgba(77, 177, 226, 0.8);
+  background-color: rgba(0, 143, 213, 0.8);
 }
 .bg-tct3-9 {
-  background-color: rgba(77, 177, 226, 0.9);
+  background-color: rgba(0, 143, 213, 0.9);
+}
+.about-overlay {
+  background-color: rgba(0, 164, 239, 0.2);
 }
 /* bg-hover-theme-color-transparent */
 .feature-box {

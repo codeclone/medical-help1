@@ -125,7 +125,7 @@
 				}
 			],
 			"sources": [
-				"less-medic/variables.less"
+				"less-medical-help/variables.less"
 			]
 		},
 		"style-main-rtl-extra.less": {
@@ -752,39 +752,39 @@
 				}
 			],
 			"sources": [
-				"../less-bootstrap/mixins/clearfix.less",
-				"../less-bootstrap/mixins/list-group.less",
-				"../less-bootstrap/mixins/responsive-visibility.less",
-				"../less-bootstrap/mixins/grid-framework.less",
-				"../less-bootstrap/mixins/size.less",
 				"../less-bootstrap/mixins/nav-vertical-align.less",
-				"../less-bootstrap/mixins/background-variant.less",
-				"../less-bootstrap/mixins/pagination.less",
-				"../less-bootstrap/mixins/tab-focus.less",
-				"../less-bootstrap/mixins/center-block.less",
-				"../less-bootstrap/mixins/border-radius.less",
-				"../less-bootstrap/mixins/progress-bar.less",
-				"../less-bootstrap/mixins/table-row.less",
 				"../less-medical-help/variables.less",
-				"../less-bootstrap/mixins/grid.less",
-				"../less-bootstrap/mixins/reset-text.less",
-				"../less-bootstrap/mixins/panels.less",
-				"../less-bootstrap/mixins/labels.less",
-				"../less-bootstrap/variables.less",
 				"../less-bootstrap/mixins/opacity.less",
-				"../less-bootstrap/mixins/vendor-prefixes.less",
 				"../less-bootstrap/mixins.less",
-				"../less-bootstrap/mixins/text-overflow.less",
+				"../less-bootstrap/variables.less",
+				"../less-bootstrap/mixins/background-variant.less",
+				"../less-bootstrap/mixins/panels.less",
+				"../less-bootstrap/mixins/size.less",
+				"../less-bootstrap/mixins/vendor-prefixes.less",
+				"../less-bootstrap/mixins/clearfix.less",
 				"../less-bootstrap/mixins/reset-filter.less",
-				"../less-bootstrap/mixins/alerts.less",
+				"../less-bootstrap/mixins/tab-focus.less",
+				"../less-bootstrap/mixins/text-overflow.less",
+				"../less-bootstrap/mixins/grid.less",
+				"../less-bootstrap/mixins/resize.less",
+				"../less-bootstrap/mixins/table-row.less",
+				"../less-bootstrap/mixins/responsive-visibility.less",
+				"../less-bootstrap/mixins/list-group.less",
 				"../less-bootstrap/mixins/forms.less",
+				"../less-bootstrap/mixins/alerts.less",
 				"../less-bootstrap/mixins/hide-text.less",
+				"../less-bootstrap/mixins/center-block.less",
 				"../less-bootstrap/mixins/nav-divider.less",
-				"../less-bootstrap/mixins/text-emphasis.less",
-				"../less-bootstrap/mixins/image.less",
-				"../less-bootstrap/mixins/gradients.less",
+				"../less-bootstrap/mixins/grid-framework.less",
+				"../less-bootstrap/mixins/labels.less",
 				"../less-bootstrap/mixins/buttons.less",
-				"../less-bootstrap/mixins/resize.less"
+				"../less-bootstrap/mixins/gradients.less",
+				"../less-bootstrap/mixins/image.less",
+				"../less-bootstrap/mixins/text-emphasis.less",
+				"../less-bootstrap/mixins/reset-text.less",
+				"../less-bootstrap/mixins/progress-bar.less",
+				"../less-bootstrap/mixins/pagination.less",
+				"../less-bootstrap/mixins/border-radius.less"
 			]
 		}
 	}
