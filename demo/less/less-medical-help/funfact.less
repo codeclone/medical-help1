@@ -1,0 +1,50 @@
+/*
+ *  -> Funfact
+ * -----------------------------------------------
+*/
+
+funfact {
+    &funfact.border {
+        border: 1px solid #ddd;
+    }
+
+    &no-border {
+        border: 0 none;
+    }
+
+    a {
+      float: left;
+      margin-right: 15px;
+      margin-top: 3px;
+    }
+
+    i {
+        font-size: 46px;
+    }
+    animate-number {
+        font-size: 32px;
+    }
+    span {
+        color: #999;
+        font-size: 18px;
+    }
+    &style-1 {
+        &:hover i {
+            font-size: 40px !important;
+            opacity: 0.3;
+        }
+
+        &:hover h4 {
+            color: rgba(0, 0, 0, 1) !important;
+        }
+
+        i,h4 {
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+        }
+    }
+
+
+
+}

@@ -1,0 +1,68 @@
+/*
+ * Footer.less
+ * -----------------------------------------------
+*/
+.footer {
+	padding: 60px 0 0;
+
+	 a {
+		color: @gray-base;
+		&:focus,
+		&:hover,
+		&:active {
+			color: @gray-dimgray;
+		}
+	}
+
+	.widget {
+		.widget-title {
+			margin-top: 0px;
+		}
+	}
+
+	.widget.dark {
+		.quick-contact-form {
+			button {
+				border-color: @black-333;
+				color: lighten(@black, 56.30%);
+
+				&:hover {
+					background-color: @gray-lighter;
+					border-color: @gray-lighter;
+					color: @black-333;
+				}
+			}
+		}
+	}
+}
+
+/* -------- Custom Theme Style ---------- */
+.footer-box {
+	padding: 20px 15px;
+	&.feature-box {
+	    margin-bottom: 0;
+	}
+	.title {
+		color: @white-base;
+		margin-bottom: 5px;
+	}
+	p {
+	  color: @gray-lighter;
+	  line-height: 20px;
+	  i {
+			color: @white-base;
+			margin-left: 10px;
+		}
+	}
+}
+.footer-box-wrapper {
+	margin-top: -55px;
+}
+.footer-news-letter .newsletter-form .form-control {
+	background: @black-333;
+	border: medium none;
+	height: 42px;
+	margin-right: 10px;
+}
+
+ 

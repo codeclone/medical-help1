@@ -1,0 +1,66 @@
+/*
+ * Section: Header
+ * -----------------------------------------------
+*/
+.header-top {
+	padding: 8px 0;
+
+	.header-widget {
+		.social-icons {
+			a {
+				i {
+					&:hover {
+						background: none;
+					}
+				}
+			}
+		}
+		.list-border {
+			li {
+				border-right: 1px solid fade(#000, 6%);
+			    padding: 5px 15px;
+
+			    &:last-child {
+			    	border-right: 0;
+			    }
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.header-top {
+		.header-widget {
+			.contact-info {
+				margin-bottom: 20px;
+
+				li {
+					display: block;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+.menuzord-brand img {
+	max-height: 38px;
+}
+/* Inner Header */
+.inner-header .title {
+	text-transform: uppercase;
+}
+
+/* Custom theme style */
+.header-nav .header-nav-wrapper .menuzord {
+  padding: 0;
+}
+.menuzord-menu > li {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.menuzord-menu > li > a {
+  color: @black-555;
+  font-size: 13px;
+  font-weight: 400;
+}

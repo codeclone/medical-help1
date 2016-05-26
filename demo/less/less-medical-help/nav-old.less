@@ -1,0 +1,124 @@
+/*
+ * 3.1  -> Header top
+ * -----------------------------------------------
+*/
+.header-top {
+  padding: 3px 0;
+
+  .header-widget {
+    .social-icons {
+      a {
+        &::hover {
+          background: none;
+        }
+      }
+    }
+
+    .list-border li {
+       border-right: 1px solid rgba(0, 0, 0, 0.06);
+       padding: 5px 15px;
+
+       &:last-child {
+         border-right: 0;
+       }  
+    }
+  }
+
+
+}
+@media only screen and (max-width : 767px) {
+  .header-top .header-widget .contact-info {
+    margin-bottom: 20px
+  }
+  .header-top .header-widget .contact-info > li {
+    display: block;
+    text-align: center;
+  }
+}
+.menuzord-brand,
+.menuzord-responsive .menuzord-brand {
+  margin: 0;
+}
+.menuzord-brand img {
+  margin-top: 18px;
+  max-height: 38px;
+}
+.menuzord-menu > li > a {
+  font-size: 14px;
+}
+.menuzord-brand img {
+  max-height: 70px;
+}
+/*Menuzord Boxed Nav color*/
+.header-nav.navbar-theme-colored .menuzord-menu > li > a { 
+  color: #fff;
+}
+.header-nav.navbar-white .menuzord-menu > li > a { 
+  color: #444;
+}
+.menuzord.menuzord-boxed .menuzord-menu ul.dropdown li a {
+  padding: 15px 25px 15px 22px;
+}
+
+/* stylish-header */
+.stylish-header {
+  position: relative;
+  min-height: 80px;
+  padding: 0 0 20px;
+}
+.stylish-header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: -650px;
+  width: 650px;
+}
+.stylish-header:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  z-index: 999;
+  -webkit-border-left: 0px solid transparent;
+  -moz-border-left: 0px solid transparent;
+  -ms-border-left: 0px solid transparent;
+  -o-border-left: 0px solid transparent;
+  border-left: 0px solid transparent;
+  -webkit-border-right: 105px solid transparent;
+  -moz-border-right: 105px solid transparent;
+  -ms-border-right: 105px solid transparent;
+  -o-border-right: 105px solid transparent;
+  border-right: 105px solid transparent;
+  bottom: 0;
+  @media only screen and (max-width : 400px) {
+    -webkit-border-right: 35px solid transparent;
+    -moz-border-right: 35px solid transparent;
+    -ms-border-right: 35px solid transparent;
+    -o-border-right: 35px solid transparent;
+    border-right: 35px solid transparent;
+  }
+}
+
+/*
+ * 3.1  -> Section Title 
+ * -----------------------------------------------
+*/
+.section-title .title{
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0;
+}
+/*
+ * 3.2  -> nav sidebar
+ * -----------------------------------------------
+*/
+.nav-sidebar li {
+  background: #f1f1f1;
+}
+.nav-sidebar li a {
+  border-radius: 0;
+}
+.nav-pills > li > a:hover, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #888;
+  color: #fff;
+}

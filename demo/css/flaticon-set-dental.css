@@ -1,0 +1,129 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/02/2016 14:51
+  	*/
+
+@font-face {
+  font-family: "flaticon-set-dental";
+  src: url("../fonts/flaticons/flaticon-set-dental.eot");
+  src: url("../fonts/flaticons/flaticon-set-dental.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticons/flaticon-set-dental.woff") format("woff"),
+       url("../fonts/flaticons/flaticon-set-dental.ttf") format("truetype"),
+       url("../fonts/flaticons/flaticon-set-dental.svg#flaticon-set-dental") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flaticon-set-dental";
+    src: url("../fonts/flaticons/flaticon-set-dental.svg#flaticon-set-dental") format("svg");
+  }
+}
+
+[class^="flaticon-dental-"]:before, [class*=" flaticon-dental-"]:before,
+[class^="flaticon-dental-"]:after, [class*=" flaticon-dental-"]:after {   
+  font-family: "flaticon-set-dental";
+  font-style: normal;
+}
+
+.flaticon-dental-airwater-syringe:before { content: "\f100"; }
+.flaticon-dental-amalgam:before { content: "\f101"; }
+.flaticon-dental-amalgam-capsule:before { content: "\f102"; }
+.flaticon-dental-amalgam-carrier:before { content: "\f103"; }
+.flaticon-dental-anesthetic:before { content: "\f104"; }
+.flaticon-dental-anesthetic-needle:before { content: "\f105"; }
+.flaticon-dental-anesthetic-needle-1:before { content: "\f106"; }
+.flaticon-dental-anesthetic-syringe:before { content: "\f107"; }
+.flaticon-dental-aspiranting-tip:before { content: "\f108"; }
+.flaticon-dental-aspirating-tip:before { content: "\f109"; }
+.flaticon-dental-aspirating-tip-1:before { content: "\f10a"; }
+.flaticon-dental-aspirating-tip-2:before { content: "\f10b"; }
+.flaticon-dental-aspiring-tip:before { content: "\f10c"; }
+.flaticon-dental-bite-block:before { content: "\f10d"; }
+.flaticon-dental-broken-tooth:before { content: "\f10e"; }
+.flaticon-dental-canine-tooth:before { content: "\f10f"; }
+.flaticon-dental-capsule:before { content: "\f110"; }
+.flaticon-dental-chisel:before { content: "\f111"; }
+.flaticon-dental-cottons-pliers:before { content: "\f112"; }
+.flaticon-dental-cracked-tooth:before { content: "\f113"; }
+.flaticon-dental-crane:before { content: "\f114"; }
+.flaticon-dental-crane-1:before { content: "\f115"; }
+.flaticon-dental-crowned-tooth:before { content: "\f116"; }
+.flaticon-dental-cutting-rongeurs:before { content: "\f117"; }
+.flaticon-dental-cutting-rounger:before { content: "\f118"; }
+.flaticon-dental-decayed-tooth:before { content: "\f119"; }
+.flaticon-dental-dental-explorer:before { content: "\f11a"; }
+.flaticon-dental-dental-floss:before { content: "\f11b"; }
+.flaticon-dental-dental-floss-1:before { content: "\f11c"; }
+.flaticon-dental-dental-floss-2:before { content: "\f11d"; }
+.flaticon-dental-dental-probe:before { content: "\f11e"; }
+.flaticon-dental-dental-probe-1:before { content: "\f11f"; }
+.flaticon-dental-dental-probe-2:before { content: "\f120"; }
+.flaticon-dental-dental-probe-3:before { content: "\f121"; }
+.flaticon-dental-dental-prone:before { content: "\f122"; }
+.flaticon-dental-dental-scaler:before { content: "\f123"; }
+.flaticon-dental-dentist-mask:before { content: "\f124"; }
+.flaticon-dental-examinating-tooth:before { content: "\f125"; }
+.flaticon-dental-extracting:before { content: "\f126"; }
+.flaticon-dental-extraction-forceps:before { content: "\f127"; }
+.flaticon-dental-fake-tooth:before { content: "\f128"; }
+.flaticon-dental-filled-tooth:before { content: "\f129"; }
+.flaticon-dental-filler:before { content: "\f12a"; }
+.flaticon-dental-forceps:before { content: "\f12b"; }
+.flaticon-dental-forceps-1:before { content: "\f12c"; }
+.flaticon-dental-gauze:before { content: "\f12d"; }
+.flaticon-dental-golden-tooth:before { content: "\f12e"; }
+.flaticon-dental-hammer:before { content: "\f12f"; }
+.flaticon-dental-headlamp:before { content: "\f130"; }
+.flaticon-dental-hemostat:before { content: "\f131"; }
+.flaticon-dental-hemostat-1:before { content: "\f132"; }
+.flaticon-dental-holed-tooth:before { content: "\f133"; }
+.flaticon-dental-implant-fixture:before { content: "\f134"; }
+.flaticon-dental-implant-fixture-1:before { content: "\f135"; }
+.flaticon-dental-implant-wrench:before { content: "\f136"; }
+.flaticon-dental-incisors-tooth:before { content: "\f137"; }
+.flaticon-dental-inner-tooth:before { content: "\f138"; }
+.flaticon-dental-mallet:before { content: "\f139"; }
+.flaticon-dental-molar-tooth:before { content: "\f13a"; }
+.flaticon-dental-mouth-mirror:before { content: "\f13b"; }
+.flaticon-dental-mouth-prop:before { content: "\f13c"; }
+.flaticon-dental-mouth-wash:before { content: "\f13d"; }
+.flaticon-dental-mouthwash:before { content: "\f13e"; }
+.flaticon-dental-plier:before { content: "\f13f"; }
+.flaticon-dental-pliers:before { content: "\f140"; }
+.flaticon-dental-polishing-paste:before { content: "\f141"; }
+.flaticon-dental-potts:before { content: "\f142"; }
+.flaticon-dental-premolar:before { content: "\f143"; }
+.flaticon-dental-prophy-angle:before { content: "\f144"; }
+.flaticon-dental-root:before { content: "\f145"; }
+.flaticon-dental-scaler:before { content: "\f146"; }
+.flaticon-dental-scaler-1:before { content: "\f147"; }
+.flaticon-dental-scaler-2:before { content: "\f148"; }
+.flaticon-dental-scaler-3:before { content: "\f149"; }
+.flaticon-dental-scaler-4:before { content: "\f14a"; }
+.flaticon-dental-scalpel:before { content: "\f14b"; }
+.flaticon-dental-scalpel-1:before { content: "\f14c"; }
+.flaticon-dental-scalpel-blade:before { content: "\f14d"; }
+.flaticon-dental-scalpel-blade-1:before { content: "\f14e"; }
+.flaticon-dental-scalpel-handle:before { content: "\f14f"; }
+.flaticon-dental-scissor:before { content: "\f150"; }
+.flaticon-dental-scissors:before { content: "\f151"; }
+.flaticon-dental-shiny-tooth:before { content: "\f152"; }
+.flaticon-dental-straight-elevator:before { content: "\f153"; }
+.flaticon-dental-suture-needle:before { content: "\f154"; }
+.flaticon-dental-suture-scissors:before { content: "\f155"; }
+.flaticon-dental-teeth-protection:before { content: "\f156"; }
+.flaticon-dental-tissue-retractor:before { content: "\f157"; }
+.flaticon-dental-tissue-retractor-1:before { content: "\f158"; }
+.flaticon-dental-tissue-retractor-2:before { content: "\f159"; }
+.flaticon-dental-tissue-retractor-3:before { content: "\f15a"; }
+.flaticon-dental-tissue-scissors:before { content: "\f15b"; }
+.flaticon-dental-tongue-retractor:before { content: "\f15c"; }
+.flaticon-dental-tongue-retractor-1:before { content: "\f15d"; }
+.flaticon-dental-tooth:before { content: "\f15e"; }
+.flaticon-dental-tooth-with-braces:before { content: "\f15f"; }
+.flaticon-dental-tooth-with-diamond:before { content: "\f160"; }
+.flaticon-dental-toothbrush:before { content: "\f161"; }
+.flaticon-dental-toothpaste:before { content: "\f162"; }
+.flaticon-dental-towel-clamps:before { content: "\f163"; }

@@ -1,0 +1,35 @@
+/*
+ * Shortcode: Funfacts.less
+ * -----------------------------------------------
+*/
+.funfact{
+	.transition(all 0.5s ease);
+	&.border {
+	border: 1px solid @gray-lightgray;
+	}
+
+	&.no-border {
+	border: 0;
+	}
+
+	&.border {
+	border: 1px solid @gray-lightgray;
+	}
+
+	i {
+	font-size: 45px;
+	}
+
+	.animate-number {
+		position: relative;
+		line-height: 1;
+		&:after {
+			bottom: 0;
+		}
+	}
+
+	span {
+		color: @gray-lighter;
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,129 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/02/2016 14:47
+  	*/
+
+@font-face {
+  font-family: "flaticon-set-nutrition";
+  src: url("../fonts/flaticons/flaticon-set-nutrition.eot");
+  src: url("../fonts/flaticons/flaticon-set-nutrition.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticons/flaticon-set-nutrition.woff") format("woff"),
+       url("../fonts/flaticons/flaticon-set-nutrition.ttf") format("truetype"),
+       url("../fonts/flaticons/flaticon-set-nutrition.svg#flaticon-set-nutrition") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "flaticon-set-nutrition";
+    src: url("../fonts/flaticons/flaticon-set-nutrition.svg#flaticon-set-nutrition") format("svg");
+  }
+}
+
+[class^="flaticon-nutrition-"]:before, [class*=" flaticon-nutrition-"]:before,
+[class^="flaticon-nutrition-"]:after, [class*=" flaticon-nutrition-"]:after {   
+  font-family: "flaticon-set-nutrition";
+  font-style: normal;
+}
+
+.flaticon-nutrition-apple-fruit:before { content: "\f100"; }
+.flaticon-nutrition-bacon-slices:before { content: "\f101"; }
+.flaticon-nutrition-baguettes-in-shopping-bag-outline:before { content: "\f102"; }
+.flaticon-nutrition-banana-fruit:before { content: "\f103"; }
+.flaticon-nutrition-birthday-cake-hand-drawn-celebration-food:before { content: "\f104"; }
+.flaticon-nutrition-bread-baguette-outline:before { content: "\f105"; }
+.flaticon-nutrition-bread-hand-drawn-slices:before { content: "\f106"; }
+.flaticon-nutrition-bread-slice-hand-drawn-food:before { content: "\f107"; }
+.flaticon-nutrition-burger-and-chips:before { content: "\f108"; }
+.flaticon-nutrition-cake-hand-drawn-triangular-piece:before { content: "\f109"; }
+.flaticon-nutrition-carrot-vegetable:before { content: "\f10a"; }
+.flaticon-nutrition-celebration-cake:before { content: "\f10b"; }
+.flaticon-nutrition-cheese-portion:before { content: "\f10c"; }
+.flaticon-nutrition-chef-hat-hand-drawn-tool:before { content: "\f10d"; }
+.flaticon-nutrition-chicken-bone-with-meat-outlined-hand-drawn-food:before { content: "\f10e"; }
+.flaticon-nutrition-chicken-hand-drawn:before { content: "\f10f"; }
+.flaticon-nutrition-chicken-leg-with-chips:before { content: "\f110"; }
+.flaticon-nutrition-chocolate-chips-cookie:before { content: "\f111"; }
+.flaticon-nutrition-cocktail-glass:before { content: "\f112"; }
+.flaticon-nutrition-coffee-cup:before { content: "\f113"; }
+.flaticon-nutrition-cola-can:before { content: "\f114"; }
+.flaticon-nutrition-cooking-pot-outline-with-cover:before { content: "\f115"; }
+.flaticon-nutrition-corn-cob-hand-drawn-vegetable:before { content: "\f116"; }
+.flaticon-nutrition-covered-plate-hand-drawn-tool:before { content: "\f117"; }
+.flaticon-nutrition-croissant-outline:before { content: "\f118"; }
+.flaticon-nutrition-cupcake-with-cream-on-top:before { content: "\f119"; }
+.flaticon-nutrition-donut-with-sprinkles:before { content: "\f11a"; }
+.flaticon-nutrition-drink-can:before { content: "\f11b"; }
+.flaticon-nutrition-drinking-water-jar-hand-drawn-tool:before { content: "\f11c"; }
+.flaticon-nutrition-egg-and-fries-hand-drawn-food-plate:before { content: "\f11d"; }
+.flaticon-nutrition-egg-outline:before { content: "\f11e"; }
+.flaticon-nutrition-eggplant-hand-drawn-vegetable:before { content: "\f11f"; }
+.flaticon-nutrition-eggs-with-bacon:before { content: "\f120"; }
+.flaticon-nutrition-fast-food-burger-drink-and-fries:before { content: "\f121"; }
+.flaticon-nutrition-fish-hand-drawn-animal:before { content: "\f122"; }
+.flaticon-nutrition-fish-skeleton-hand-drawn-bones:before { content: "\f123"; }
+.flaticon-nutrition-food-dish:before { content: "\f124"; }
+.flaticon-nutrition-food-meal-hand-drawn-plate-side-view:before { content: "\f125"; }
+.flaticon-nutrition-food-plate-hand-drawn-lunch:before { content: "\f126"; }
+.flaticon-nutrition-fork-hand-drawn-tool:before { content: "\f127"; }
+.flaticon-nutrition-fried-egg-on-pan:before { content: "\f128"; }
+.flaticon-nutrition-fries-pack:before { content: "\f129"; }
+.flaticon-nutrition-frying-pan-cooking:before { content: "\f12a"; }
+.flaticon-nutrition-grape-bunch:before { content: "\f12b"; }
+.flaticon-nutrition-half-lemon:before { content: "\f12c"; }
+.flaticon-nutrition-hand-drawn-burger:before { content: "\f12d"; }
+.flaticon-nutrition-hand-drawn-drink-glass-with-a-straw-and-lemon-slice:before { content: "\f12e"; }
+.flaticon-nutrition-hand-drawn-food:before { content: "\f12f"; }
+.flaticon-nutrition-hot-dish-with-spoon:before { content: "\f130"; }
+.flaticon-nutrition-hot-dog:before { content: "\f131"; }
+.flaticon-nutrition-hot-soup-bowl-hand-drawn-food:before { content: "\f132"; }
+.flaticon-nutrition-ice-cream-ball-in-cup:before { content: "\f133"; }
+.flaticon-nutrition-ice-cream-hand-drawn-dessert-cup:before { content: "\f134"; }
+.flaticon-nutrition-italian-food-pizza:before { content: "\f135"; }
+.flaticon-nutrition-juice-brick:before { content: "\f136"; }
+.flaticon-nutrition-knife-hand-drawn-tool:before { content: "\f137"; }
+.flaticon-nutrition-lemon-slice:before { content: "\f138"; }
+.flaticon-nutrition-lettuce-vegetable:before { content: "\f139"; }
+.flaticon-nutrition-melting-hand-drawn-ice-cream-cone:before { content: "\f13a"; }
+.flaticon-nutrition-milk-box-hand-drawn-container:before { content: "\f13b"; }
+.flaticon-nutrition-mushroom-outline:before { content: "\f13c"; }
+.flaticon-nutrition-pancakes-with-cream:before { content: "\f13d"; }
+.flaticon-nutrition-pear-fruit:before { content: "\f13e"; }
+.flaticon-nutrition-peeled-banana:before { content: "\f13f"; }
+.flaticon-nutrition-pepper-outlined-vegetable:before { content: "\f140"; }
+.flaticon-nutrition-pepper-vegetable:before { content: "\f141"; }
+.flaticon-nutrition-pizza-slice:before { content: "\f142"; }
+.flaticon-nutrition-plastic-glass-with-straw:before { content: "\f143"; }
+.flaticon-nutrition-plate-of-fruits:before { content: "\f144"; }
+.flaticon-nutrition-popcorn-hand-drawn-bowl:before { content: "\f145"; }
+.flaticon-nutrition-pot-on-stove:before { content: "\f146"; }
+.flaticon-nutrition-rice-bowl:before { content: "\f147"; }
+.flaticon-nutrition-salad-bowl-hand-drawn-food:before { content: "\f148"; }
+.flaticon-nutrition-salt-shaker-hand-drawn-tool:before { content: "\f149"; }
+.flaticon-nutrition-sandwich-food:before { content: "\f14a"; }
+.flaticon-nutrition-skewer:before { content: "\f14b"; }
+.flaticon-nutrition-slotted-turner-hand-drawn-kitchen-utensil:before { content: "\f14c"; }
+.flaticon-nutrition-soup-hand-drawn-hot-food-bowl:before { content: "\f14d"; }
+.flaticon-nutrition-soup-ladle-hand-drawn-tool:before { content: "\f14e"; }
+.flaticon-nutrition-soup-spoon-hand-drawn-tool-with-hot-food:before { content: "\f14f"; }
+.flaticon-nutrition-spaghetti-dish:before { content: "\f150"; }
+.flaticon-nutrition-spoon-hand-drawn-tool-with-hot-food:before { content: "\f151"; }
+.flaticon-nutrition-spoon-outline:before { content: "\f152"; }
+.flaticon-nutrition-steak-and-chips-dish:before { content: "\f153"; }
+.flaticon-nutrition-strainer-hand-drawn-kitchen-tool:before { content: "\f154"; }
+.flaticon-nutrition-strawberry-fruit:before { content: "\f155"; }
+.flaticon-nutrition-sushi-roll:before { content: "\f156"; }
+.flaticon-nutrition-sweet-things-tray:before { content: "\f157"; }
+.flaticon-nutrition-tea-cup-with-muffin-and-cookies:before { content: "\f158"; }
+.flaticon-nutrition-tea-glass:before { content: "\f159"; }
+.flaticon-nutrition-thick-sandwich:before { content: "\f15a"; }
+.flaticon-nutrition-thick-sandwich-1:before { content: "\f15b"; }
+.flaticon-nutrition-thick-steak:before { content: "\f15c"; }
+.flaticon-nutrition-toasting-cups:before { content: "\f15d"; }
+.flaticon-nutrition-tomato-vegetable:before { content: "\f15e"; }
+.flaticon-nutrition-two-cherries:before { content: "\f15f"; }
+.flaticon-nutrition-vegetables-hand-drawn-basket:before { content: "\f160"; }
+.flaticon-nutrition-water-glass:before { content: "\f161"; }
+.flaticon-nutrition-watermelon-slice:before { content: "\f162"; }
+.flaticon-nutrition-wine-glass-hand-drawn-drink:before { content: "\f163"; }
