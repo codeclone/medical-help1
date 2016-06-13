@@ -1771,7 +1771,7 @@ section > .container-fluid {
 .header-top {
   padding: 8px 0;
 }
-.header-top .header-widget .social-icons a i:hover {
+.header-top .header-widget .font-icons a i:hover {
   background: none;
 }
 .header-top .header-widget .list-border li {
@@ -4648,7 +4648,7 @@ blockquote p {
  * -----------------------------------------------
 */
 /* common style */
-.social-icons a {
+.font-icons a {
   color: #333333;
   font-size: 18px;
   height: 32px;
@@ -4661,10 +4661,10 @@ blockquote p {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.social-icons a:hover {
+.font-icons a:hover {
   color: #666666;
 }
-.social-icons.icon-gray a {
+.font-icons.icon-gray a {
   background-color: #eeeeee;
   color: #555555;
   display: block;
@@ -4673,17 +4673,17 @@ blockquote p {
   line-height: 36px;
   width: 36px;
 }
-.social-icons.icon-gray a:hover {
+.font-icons.icon-gray a:hover {
   color: #bbbbbb;
 }
-.social-icons.icon-gray.ficon-bordered a {
+.font-icons.icon-gray.ficon-bordered a {
   background-color: transparent;
   border: 2px solid #eeeeee;
 }
-.social-icons.icon-gray.ficon-bordered a:hover {
+.font-icons.icon-gray.ficon-bordered a:hover {
   border: 2px solid #d5d5d5;
 }
-.social-icons.icon-dark a {
+.font-icons.icon-dark a {
   background-color: #111111;
   color: #fff;
   display: block;
@@ -4692,58 +4692,58 @@ blockquote p {
   line-height: 36px;
   width: 36px;
 }
-.social-icons.icon-dark a:hover {
+.font-icons.icon-dark a:hover {
   color: #5e5e5e;
 }
-.social-icons.icon-dark.ficon-bordered a {
+.font-icons.icon-dark.ficon-bordered a {
   background-color: transparent;
   border: 2px solid #111111;
   color: #111111;
 }
-.social-icons.icon-dark.ficon-bordered a:hover {
+.font-icons.icon-dark.ficon-bordered a:hover {
   background-color: #111111;
   border-color: #111111;
   color: #fff;
 }
-.social-icons.ficon-bordered a {
+.font-icons.ficon-bordered a {
   border: 1px solid #777777;
 }
-.social-icons.ficon-bordered a:hover {
+.font-icons.ficon-bordered a:hover {
   background-color: #777777;
   color: #fff;
 }
-.social-icons.ficon-rounded a {
+.font-icons.ficon-rounded a {
   border-radius: 3px;
 }
-.social-icons.ficon-circled a {
+.font-icons.ficon-circled a {
   border-radius: 50%;
 }
-.social-icons.icon-sm a {
+.font-icons.icon-sm a {
   font-size: 13px;
   height: 30px;
   line-height: 30px;
   margin: 0;
   width: 30px;
 }
-.social-icons.icon-md a {
+.font-icons.icon-md a {
   font-size: 24px;
   height: 50px;
   line-height: 50px;
   width: 50px;
 }
-.social-icons.icon-lg a {
+.font-icons.icon-lg a {
   font-size: 32px;
   height: 60px;
   line-height: 60px;
   width: 60px;
 }
-.social-icons.icon-xl a {
+.font-icons.icon-xl a {
   font-size: 60px;
   height: 120px;
   line-height: 120px;
   width: 120px;
 }
-.social-icons li {
+.font-icons li {
   display: inline-block;
   margin-bottom: 0;
   margin-top: 0;
@@ -5567,7 +5567,7 @@ blockquote p {
   border-bottom: 2px dotted #c0c0c0;
 }
 /*
- * Shortcode: Social-Icons.less
+ * Shortcode: font-icons.less
  * -----------------------------------------------
 */
 /*
@@ -6491,11 +6491,11 @@ blockquote p {
   position: absolute;
   top: 0;
 }
-.widget .social-icons li {
+.widget .font-icons li {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.widget .social-icons li a {
+.widget .font-icons li a {
   margin-bottom: 0;
 }
 .widget .tags a {
@@ -6555,7 +6555,7 @@ blockquote p {
 .widget.dark .search-input {
   border: 1px solid #333333;
 }
-.widget.dark .social-icons li a:hover i {
+.widget.dark .font-icons li a:hover i {
   color: #fff;
 }
 .widget.dark .search-button {

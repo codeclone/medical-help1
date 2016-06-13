@@ -7,7 +7,7 @@ COLOR CODE: #00A4EF
 ----------------------------------------- */
 /* background-theme-color */
 .bg-tc,
-.about-doctor.social-icons.ficon-bordered a:hover {
+.about-doctor.font-icons.ficon-bordered a:hover {
   background-color: #00A4EF !important;
 }
 /* bg-hover-theme-color */
@@ -534,7 +534,7 @@ fieldset[disabled] .btn-tc.focus {
   color: #fff;
 }
 /*
- * Shortcode: social-icons Theme Colored
+ * Shortcode: font-icons Theme Colored
  * -----------------------------------------------
 */
 .ficon-tc a {
@@ -586,7 +586,7 @@ fieldset[disabled] .btn-tc.focus {
   border-color: #00A4EF;
   color: #fff;
 }
-.social-icons.icon-hover-tc a:hover {
+.font-icons.icon-hover-tc a:hover {
   background-color: #00A4EF;
   border-color: #00A4EF;
   color: #fff;

@@ -524,7 +524,7 @@ fieldset[disabled] .btn-theme-colored.focus {
   color: #fff;
 }
 /*
- * Shortcode: social-icons Theme Colored
+ * Shortcode: font-icons Theme Colored
  * -----------------------------------------------
 */
 .ficon-theme-colored a {
@@ -576,7 +576,7 @@ fieldset[disabled] .btn-theme-colored.focus {
   border-color: #00A4EF;
   color: #fff;
 }
-.social-icons.icon-hover-theme-colored a:hover {
+.font-icons.icon-hover-theme-colored a:hover {
   background-color: #00A4EF;
   border-color: #00A4EF;
   color: #fff;
